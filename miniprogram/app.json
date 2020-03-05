@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/homepage/homepage",
+    "pages/mine/mine",
+    "pages/order/order",
+    "pages/phonenumber/phonenumber",
+    "pages/service/service"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#252525",
+    "navigationBarTitleText": "SUPERBXOING",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "color": "#fff",
+    "selectedColor": "#FF2C5A",
+    "backgroundColor": "#252525",
+    "list":[{
+      "pagePath": "pages/homepage/homepage",
+      "text": "门店",
+      "iconPath": "images/bar/fhome.png",
+      "selectedIconPath": "images/bar/home.png"
+    },
+    {
+      "pagePath":"pages/index/index",
+      "text": "预约",
+      "iconPath": "images/bar/ffist.png",
+      "selectedIconPath": "images/bar/fist.png"
+    },
+    {
+      "pagePath":"pages/mine/mine",
+      "text": "我的",
+      "iconPath": "images/bar/fmine.png",
+      "selectedIconPath": "images/bar/mine.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

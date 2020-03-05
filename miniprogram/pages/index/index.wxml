@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="calendar">
+  <view class="calendar-header">
+    <view class="ch-week" wx:for="{{week}}" wx:key="{{index}}">
+      <text class="ch-item-text">{{item}}</text>
+    </view>
+  </view>
+  <!-- 完整的当月数据 -->
+  <view class="calendar-month" wx:if="{{!calendarfold}}">
+    <view class="calendar-month-week" wx:for="{{weekData}}" wx:for-index="weekIndex" wx:for-item="weekItem" wx:key="{{weekIndex}}">
+      <view catchtap="clickDay" data-day="{{item}}" class="cm-week-day" wx:for="{{weekItem}}" wx:key="{{index}}">
+        <view wx:if="{{clickYear == showYear && clickMonth == showMonth && clickDay == item}}" hidden="{{item < 0}}" class="cm-week-day-circle">{{item}}</view>
+        <text wx:else class="{{nowYear == showYear && nowMonth == showMonth && nowDay == item ? 'today' : ''}}" hidden="{{item < 0}}">{{item}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 本周数据 -->
+  <view class="calendar-month-week" wx:else>
+      <view catchtap="clickDay" data-day="{{item}}" class="cm-week-day" wx:for="{{nowWeekData}}" wx:key="{{index}}">
+        <view wx:if="{{clickYear == showYear && clickMonth == showMonth && clickDay == item}}" hidden="{{item < 0}}" class="cm-week-day-circle">{{item}}</view>
+        <text wx:else class="{{nowYear == showYear && nowMonth == showMonth && nowDay == item ? 'today' : ''}}" hidden="{{item < 0}}">{{item}}</text>
+      </view>
+    </view>
+</view>
+<!-- 修改年月日 -->
+<picker mode="date" value="{{date}}" start="2015-09-01" end="{{nowYear}}-{{nowMonth}}-{{nowDay}}" bindchange="bindDateChange">
+  <view class="picker">
+    当前选择: {{showYear}}-{{showMonth}}-{{showDay}}
+  </view>
+</picker>
+
+<view class="draw" catchtap="foldAndUnfold" hidden="{{nowYear != showYear || nowMonth != showMonth}}">↓整月</view>
+
+<!-- 预约 -->
+
+
+<view style="margin: 16px"></view>
+<i-card title="拳击训练团课" extra="" thumb="https://i.ibb.co/LYjjNn2/20200303145111.jpg">
+    <view slot="content">训练内容：拳击专项 体能训练 力量训练</view>
+    <view slot="footer">教练：蔡也  价格：￥69</view>
+</i-card>
+
+<view style="margin: 16px"></view>
+<i-card title="拳击训练团课" extra="" thumb="https://i.ibb.co/RNqdS51/TITANS-20200303-174541.jpg">
+    <view slot="content">训练内容：拳击专项 体能训练 力量训练</view>
+    <view slot="footer">教练：程懿  价格：￥69</view>
+</i-card>
+
+<view style="margin: 16px"></view>
+<i-card title="拳击训练团课" extra="" thumb="https://i.ibb.co/6WW7104/TITANS-20200303-174547.jpg">
+    <view slot="content">训练内容：拳击专项 体能训练 力量训练</view>
+    <view slot="footer">教练：谢志雄  价格：￥69</view>
+</i-card>
+

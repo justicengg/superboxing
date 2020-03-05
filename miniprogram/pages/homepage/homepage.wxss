@@ -1,0 +1,16 @@
+/* pages/homepage/homepage.wxss */
+.card-local{margin:16px 16px;overflow:auto;position:relative;background:#323334;border:1rpx solid #323334;border-radius:5px;color: #fff;}
+.card-local-heard{padding-top: 10px;padding-left: 10px;padding-bottom: 10px}
+.card-local-title{padding-left: 10px;font-size: 16px}
+.card-local-content{padding-top: 10px;padding-left: 10px;padding-right: 10px;height: 45px;border-top: 1px solid dimgray;font-size: 12px}
+.card{margin:16px 16px;overflow:auto;position:relative;background:#323334;border:1rpx solid #323334;border-radius:5px;color: #fff;}
+.card-heard{padding-top: 10px;padding-left: 10px;padding-bottom: 10px}
+.card-title{padding-left: 10px;font-size: 16px}
+.card-content{padding-top: 10px;height: 35px;display: flex;flex-direction: row;justify-content: space-around;border-top: 1px solid dimgray;}
+.card-text{padding-bottom: 10px;display: flex;flex-direction: row;justify-content: space-around;font-size: 10px}
+.card-text>text{flex:1;text-align: center;}
+.card-class{margin:16px 16px;overflow:auto;position:relative;background:#323334;border:1rpx solid #323334;border-radius:5px;color: #fff;}
+.card-class-heard{padding-top: 10px;padding-left: 10px;padding-bottom: 10px}
+.card-class-title{padding-left: 10px;font-size: 16px}
+.card-class-content{padding-top: 10px;padding-left: 10px;padding-right: 10px;height: 180px;border-top: 1px solid dimgray;font-size: 12px;line-height: 20px}
+.fit{padding-top: 10px;}

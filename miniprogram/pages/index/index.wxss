@@ -1,0 +1,72 @@
+/**index.wxss**/
+.calendar-header{
+  display: flex;
+  justify-content: center;
+  background-color: #252525;
+  color: #FFF;
+}
+.ch-week{
+  flex: 1;
+  text-align: center;
+  
+}
+.ch-item-text{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  /* background-color: #159F5C; */
+}
+.calendar-month-week{
+  display: flex;
+  position: relative;
+  height: 100rpx;
+}
+.cm-week-day{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #252525;
+}
+.cm-week-day-circle{
+  background-color: #FF2C5A;
+  width: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 50%;
+}
+.today{
+  color: #FF2C5A;
+}
+
+.draw{
+  color: #fff;
+  padding-left: 10px;
+}
+
+#Box_list>dl{
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			#Box_list>dl>dt{
+				display: flex;
+			}
+			.Box_avatar{
+				width: 5rem;
+				height: 100%;
+				border-radius: 5px;
+			}
+			.Box_title{
+				flex:1;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+			}
+			.Box_btn{
+				width: 4rem;
+				height: 100%;
+			}

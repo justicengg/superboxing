@@ -1,0 +1,28 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+   <view class="userinfo-card">
+       <view class="userinfo">
+          <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+          <block wx:else>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          <text class="slogan">NO BOXING NO LIFE</text>
+          </block>
+        </view>
+    </view>
+</view>
+
+<!-- list -->
+<i-cell-group class="list">
+    <i-cell title="查看预约" is-link url="/pages/order/order">
+        <i-icon type="task" color="#fff" size="24" slot="icon"/> 
+     </i-cell>
+     <i-cell title="手机号" value="绑定手机号"  is-link url="/pages/phonenumber/phonenumber">
+        <i-icon type="mobilephone" color="#fff" size="24" slot="icon"/> 
+     </i-cell>
+     <i-cell title="联系客服" is-link url="/pages/service/service">
+        <i-icon type="feedback" color="#fff" size="24" slot="icon"/> 
+     </i-cell>
+</i-cell-group>
+
+

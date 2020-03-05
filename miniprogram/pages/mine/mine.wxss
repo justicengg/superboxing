@@ -1,0 +1,41 @@
+/* pages/mine/mine.wxss */
+.container{
+  background-image: url(https://i.ibb.co/jL9VJyf/77379d5936dc0122b458a3f40ec2fef.png);
+  background-repeat:no-repeat;
+  background-size:100% 75%;
+  
+}
+.userinfo-card{
+  overflow:auto;
+  position:relative;
+  border:1rpx solid #fff;
+  border-radius:5px;
+  width: 90%;
+  height: 210px;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.slogan{
+  padding-top: 20px;
+  color: #fff;
+}
+
+.list{
+  
+}

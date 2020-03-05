@@ -1,0 +1,61 @@
+<!--pages/homepage/homepage.wxml-->
+<view class="haibao">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+   <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="silde-imgae" style="width:100%" mode="aspectFill"></image>
+      </swiper-item>
+   </block>
+ </swiper>
+</view>
+
+<!-- pages/homepage/card-local -->
+<view class="card-local">
+    <view class="card-local-heard">
+        <image class="icon" style="width:16px;height:16px" src="../../images/icon/local.png"></image>
+        <text class="card-local-title">欧罗巴店</text>
+    </view>
+    <view class="card-local-content">
+        <text>地点：南昌市新建区红角洲丰和南大道2888号欧罗巴广场三楼A304</text>
+    </view>
+</view>
+
+<!-- pages/homepage/card-equipment -->
+<view class="card">
+  <view class="card-heard">
+    <image class="icon" style="width:16px;height:16px" src="../../images/icon/gym.png"></image>
+    <text class="card-title">场馆设施</text>
+  </view>
+<view class="card-content" >
+     <image class="icon-one" style="width:28px;height:28px" src="../../images/icon/changingroom.png"></image>
+     <image class="icon-two" style="width:28px;height:28px" src="../../images/icon/locker.png"></image>
+     <image class="icon-three" style="width:28px;height:28px" src="../../images/icon/park.png"></image>
+     <image class="icon-four" style="width:28px;height:28px" src="../../images/icon/toilet.png"></image>
+     <image class="icon-five" style="width:28px;height:28px" src="../../images/icon/washing.png"></image>
+     <image class="icon-six" style="width:28px;height:28px" src="../../images/icon/wifi.png"></image>
+  </view> 
+  <view class="card-text">
+    <text>更衣室</text>
+    <text>储物柜</text>
+    <text>停车场</text>
+    <text>卫生间</text>
+    <text>淋浴室</text>
+    <text>WIFI</text>
+  </view>
+</view>
+
+   <!--pages/homepage/card-class  -->
+  <view class="card-class">
+      <view class="card-class-heard">
+          <image class="icon" style="width:16px;height:16px" src="../../images/bar/ffist.png"></image>
+          <text class="card-class-title">课程介绍</text>
+      </view>
+      <view class="card-class-content">
+          <view class="introduction">
+              <text>1.拳击专项热身\n2.拳击技术训练——拳击站架、基础出拳、步伐与闪躲训练\n3.拳击手靶——拳击擂台回合训练\n4.拳击攻防练习\n5.拳击体适能练习\n6.练后肌肉拉伸放松\n</text>
+          </view>
+          <view class="fit">
+             <text>*适用人群：减脂、塑形、体能、拳击技术\n*适用年龄：6岁以上</text> 
+            </view>
+      </view>
+ </view>
